@@ -45,7 +45,10 @@ class LinearRegressionTrainer:
     
         return 1 - (errors_square.sum()/total_sum_of_squares)
 
-     def predict_y(self, x_array):
+     def predict_y(self, x):
+        return self.alpha + x*self.beta
+     
+     def predict_y_list(self, x_array):
         return [self.alpha + x*self.beta for x in x_array]
      
      def get_parameters(self):
