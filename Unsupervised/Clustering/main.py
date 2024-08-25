@@ -10,7 +10,7 @@ data = json.load(file)
 data_ids = ["Gabriela", "Luiz Felipe","Patrícia", "Ovídio", "Leonor"]
 
 distance_calculator = calculate_euclidian
-hierarchy_method = average_hierarchy #complete_hierarchy
+hierarchy_method = complete_hierarchy #complete_hierarchy
 
 clusterTrainer = ClusterTrainer(data=data, labels=data_ids, distance_calculator=distance_calculator, hierarchy_method=hierarchy_method)
 
