@@ -49,7 +49,7 @@ class LinearRegressionTrainer:
         return self.alpha + x*self.beta
      
      def predict_y_list(self, x_array):
-        return [self.alpha + x*self.beta for x in x_array]
+        return [self.predict_y(x) for x in x_array]
      
      def get_parameters(self):
         return [self.alpha, self.beta]

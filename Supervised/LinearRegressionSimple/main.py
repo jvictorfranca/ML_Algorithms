@@ -2,7 +2,7 @@ import pandas as pd
 
 from Classes.LinearRegressionTrainer import LinearRegressionTrainer
 
-sheet = pd.read_excel("Supervised\LinearRegression\sheet.xlsx")
+sheet = pd.read_excel("Supervised\LinearRegressionSimple\sheet.xlsx")
 
 trainer = LinearRegressionTrainer(sheet)
 
